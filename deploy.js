@@ -2,7 +2,7 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
 const { abi, evm } = require('./compile');
 const { mnemonicKeys, networkURL } = require('./config/config');
-
+console.log(mnemonicKeys, networkURL);
 const INITIAL_STRING = 'There is a new message';
 
 const provider = new HDWalletProvider(mnemonicKeys, networkURL);
